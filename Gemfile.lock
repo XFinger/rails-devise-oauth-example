@@ -49,6 +49,7 @@ GEM
     execjs (1.2.13)
       multi_json (~> 1.0)
     gem_plugin (0.2.3)
+    hashie (1.2.0)
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.19)
@@ -65,6 +66,22 @@ GEM
       gem_plugin (>= 0.2.3)
     multi_json (1.0.4)
     mysql (2.8.1-x86-mingw32)
+    oauth (0.4.5)
+    omniauth (1.0.1)
+      hashie (~> 1.2)
+      rack
+    omniauth-google-apps (0.0.1)
+      omniauth (~> 1.0)
+      omniauth-openid (~> 1.0)
+      ruby-openid-apps-discovery (~> 1.2.0)
+    omniauth-oauth (1.0.0)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-openid (1.0.1)
+      omniauth (~> 1.0)
+      rack-openid (~> 1.3.1)
+    omniauth-twitter (0.0.7)
+      omniauth-oauth (~> 1.0)
     orm_adapter (0.0.5)
     polyglot (0.3.3)
     rack (1.3.5)
@@ -72,6 +89,9 @@ GEM
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
+    rack-openid (1.3.1)
+      rack (>= 1.1.0)
+      ruby-openid (>= 2.1.8)
     rack-ssl (1.3.2)
       rack
     rack-test (0.6.1)
@@ -94,6 +114,9 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    ruby-openid (2.1.8)
+    ruby-openid-apps-discovery (1.2.0)
+      ruby-openid (>= 2.1.7)
     sass (3.1.12)
     sass-rails (3.1.5)
       actionpack (~> 3.1.0)
@@ -126,6 +149,10 @@ DEPENDENCIES
   json
   mongrel
   mysql
+  omniauth
+  omniauth-google-apps
+  omniauth-openid
+  omniauth-twitter
   rails (= 3.1.0)
   sass-rails (~> 3.1.0)
   uglifier

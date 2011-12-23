@@ -6,7 +6,10 @@ gem 'mongrel'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
-
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-openid'
+gem 'omniauth-google-apps'
 gem 'json'
 
 # Gems used only for assets and not required

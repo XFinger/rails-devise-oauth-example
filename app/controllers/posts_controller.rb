@@ -1,25 +1,23 @@
 class PostsController < ApplicationController
+  respond_to :html, :json
+  
   before_filter :authenticate_user!
-  # GET /posts
-  # GET /posts.json
+  
   def index
     @posts = Post.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render :json => @posts }
-    end
+    respond_with(@posts)
+ #   respond_to do |format|
+  #    format.html # index.html.erb
+  #    format.json { render :json => @posts }
+  #  end
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @post }
-    end
+    respond_with(@post)
+    
   end
 
   # GET /posts/new
