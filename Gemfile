@@ -9,7 +9,9 @@ gem 'mysql'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-openid'
-gem 'omniauth-google-apps'
+gem 'omniauth-google-apps' 
+gem 'omniauth-google-oauth2'
+gem 'omniauth-github'
 gem 'json'
 
 # Gems used only for assets and not required
