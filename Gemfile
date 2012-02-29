@@ -12,6 +12,7 @@ gem 'omniauth-openid'
 gem 'omniauth-google-apps' 
 gem 'omniauth-google-oauth2'
 gem 'omniauth-github'
+gem 'omniauth-facebook'
 gem 'json'
 
 # Gems used only for assets and not required
